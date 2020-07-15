@@ -29,7 +29,7 @@ public class EmployeeDetails {
 		System.out.println("------------------------------------");
 		
 		//To print all values in HashMap use ---> entrySet(), getKey() and getValue()
-		System.out.println("Print all values in HashMap use ---> entrySet(), getKey() and getValue() \n");
+		System.out.println("Print all Pair kay-value in HashMap use -> entrySet(), getKey() and getValue() \n");
 		for(Map.Entry<String, String> e : empMap.entrySet()) {
 			System.out.println("Key: " + e.getKey() + " Value: " + e.getValue());
 		}
@@ -51,7 +51,35 @@ public class EmployeeDetails {
 		//forEach with Lambda expression:
 		System.out.println("forEach with Lambda expression\n");
 		empMap.forEach((k,v)-> System.out.println("Keys: "+k+ " Values: " +v));
+		System.out.println("------------------------------------");
 		
+		HashMap<String, Integer> studentMarks = new HashMap<String, Integer>();
+		studentMarks.put("Tanishq", 95);
+		studentMarks.put("Sharvi", 98);
+		
+		//Use entrySet() to print all values in pair
+		for(Map.Entry<String, Integer> s : studentMarks.entrySet()) {
+			System.out.println("Keys: "+ s.getKey() + " Values: " + s.getValue());
+		}
+		System.out.println("------------------------------------");
+		
+		//Only key set -> keySet()
+		for(String k1 : studentMarks.keySet()) {
+			System.out.println("Keys: " + k1);
+		}
+		System.out.println("------------------------------------");
+		
+		// Only values set ->Value()
+		
+		for(Integer v1 : studentMarks.values()) {
+			System.out.println("Values: "+v1);
+		}
+		System.out.println("------------------------------------");
+		
+		//Lambda method
+		studentMarks.forEach((k,v) -> System.out.println("Keys: " +k+ " Values: " +v));
+		
+	
 
 	}
 
