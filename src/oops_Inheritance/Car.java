@@ -14,5 +14,9 @@ public class Car extends Vehicle{
 	public void refuel() {
 		System.out.println("Car....refuel");
 	}
+	
+	public static void horn() {
+		System.out.println("Car.....Horn");
+	}
 
 }

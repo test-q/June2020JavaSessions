@@ -14,6 +14,8 @@ public class TestCar {
 		b.refuel();
 		//BMW try to access grandparent class properties
 		b.engine();
+		Car.horn();
+		BMW.horn();
 		b.display(); //This is possible but throw warning boz it is static properties so call in static way below
 		Vehicle.display();  //BMW try to access grandparent class, static properties
 		System.out.println("-----------------------");

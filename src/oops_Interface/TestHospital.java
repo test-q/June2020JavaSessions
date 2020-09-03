@@ -33,6 +33,10 @@ public class TestHospital {
 		us.billing();
 		us.swinFlu();
 		us.covid19();
+		int newFees = USMedical.min_fees +10;
+		System.out.println(USMedical.min_fees);
+		System.out.println(newFees);
+		
 		System.out.println("------------------------------");
 		
 		WHO w = new FortisHospital();

@@ -10,6 +10,8 @@ public interface USMedical extends WHO{
 	
 	public void orthoService();
 	
+	int min_fees = 10;
+	
 	//Java 1.8
 	
 	public static void covidTest() {

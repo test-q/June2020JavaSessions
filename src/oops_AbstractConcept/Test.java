@@ -10,7 +10,7 @@ public class Test {
 		lp.title();
 		lp.header();
 		lp.doLogin();
-		lp.doLogin("rupali", "rup123");
+		lp.doLogin("rupali", "test123");
 		lp.display();
 		Page.logo(); // calling static method from abstract class
 		

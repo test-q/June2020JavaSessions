@@ -4,19 +4,28 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Credentials {
+	 float roi;
 	 HashMap<String, String> credMap;
+	 
+	 public Credentials() {
+		 this.roi = 6.2f;
+		 this.credMap = new HashMap<String, String>();
+	 }
+   
 
 	public static void main(String[] args) {
 		//customer, seller, distributor, vendor, partners, categorymanager
 		Credentials obj = new Credentials();
+		Credentials obj1 = new Credentials();
 	
-		obj.credMap = new HashMap<String, String>();
 		obj.credMap.put("customer", "naveen@gmail.com : nav123");
 		obj.credMap.put("seller", "rupali@gmail.com : rup123");
 		obj.credMap.put("distributor", "purvi@gmail.com : pur123");
 		obj.credMap.put("vendor", "vibha@gmail.com : vib123");
 		obj.credMap.put("partners", "ravi@gmail.com : rav123");
 		obj.credMap.put("categorymanager", "ramya@gmail.com : ram123");
+		
+	
 		
 		System.out.println("Print all pairs key-value\n");
 		for(Map.Entry<String, String> p : obj.credMap.entrySet()) {
@@ -53,9 +62,11 @@ public class Credentials {
 		String sellerPwd = obj.credMap.get("seller").split(":")[1].trim();
 		
 		obj.doLogin(sellerUname, sellerPwd);
+		//obj1.doLogin("seller");
 	
 
 	}
+
 	
 	public void doLogin(String role) {
 		//Findout username and password i.e. value
