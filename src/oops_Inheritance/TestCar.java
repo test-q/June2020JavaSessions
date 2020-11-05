@@ -5,6 +5,7 @@ public class TestCar {
 	public static void main(String[] args) {
 		
 		BMW b = new BMW();
+		
 		//BMW try to access his own properties
 		System.out.println("BMW b = new BMW()");
 		b.start();
@@ -22,6 +23,7 @@ public class TestCar {
 		
 		System.out.println("Car c = new Car()");
 		Car c = new Car();
+		
 		//Car try to access his own properties
 		c.start();
 		c.stop();
@@ -33,6 +35,7 @@ public class TestCar {
 		
 		System.out.println("Audi a = new Audi()");
 		Audi a = new Audi();
+		
 		//Audi try to access his own properties
 		a.start();
 		a.theftSafety();
@@ -68,6 +71,7 @@ public class TestCar {
 		
 		System.out.println("Vehicle v1 = new Car()");
 		Vehicle v1 = new Car();
+		
 		v1.engine();
 		v1.display();  //Static method hence shows warning message
 		v1.start();
@@ -75,9 +79,11 @@ public class TestCar {
 		
 		System.out.println("Vehicle v2 = new BMW()");
 		Vehicle v2 = new BMW();
+		
 		v2.engine();
-		v2.display();//Static method hence shows warning message
 		v2.start();
+		v2.display();//Static method hence shows warning message
+		
 		System.out.println("-----------------------");
 		
 		//Down Casting / Runtime Exception

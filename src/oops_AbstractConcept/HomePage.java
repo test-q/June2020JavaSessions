@@ -23,4 +23,5 @@ public class HomePage extends Page{
 	public void display() {
 		System.out.println("HomePage.....Display");
 	}
+
 }
